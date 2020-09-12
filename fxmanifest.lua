@@ -1,0 +1,20 @@
+fx_version 'cpinto'
+
+game 'gta5'
+
+description 'Load Player Status From DB'
+
+version '1.0.0'
+
+server_scripts {
+    'server.lua'
+}
+
+client_scripts {
+    'client.lua'
+}
+
+dependencies {
+    esx_extended,
+    esx_basicneeds
+}
