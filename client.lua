@@ -9,8 +9,9 @@ Citizen.CreateThread(function()
 end)
 
    
-AddEventHandler('esx:onPlayerSpawn', function() 
+AddEventHandler('esx:loadingScreenOff', function() 
     local serverId = GetPlayerServerId(PlayerId())
+    print("serverId " ..serverId)
     TriggerServerEvent( 'load_player_status:getStatus', serverId, 'hunger')
     TriggerServerEvent( 'load_player_status:getStatus', serverId, 'thirst' )
 end)

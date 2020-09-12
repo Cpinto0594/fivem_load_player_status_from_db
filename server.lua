@@ -8,7 +8,7 @@ AddEventHandler('load_player_status:getStatus', function(playerId, statusName)
 
 	for i=1, #status, 1 do
 		if status[i].name == statusName then
-			TriggerClientEvent('load_player_status:setStatus', status[i])
+			TriggerClientEvent('load_player_status:setStatus', playerId, status[i])
 			break
 		end
 	end
