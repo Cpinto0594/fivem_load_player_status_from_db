@@ -1,4 +1,4 @@
-fx_version 'cpinto'
+fx_version 'adamant'
 
 game 'gta5'
 
