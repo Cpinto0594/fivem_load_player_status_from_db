@@ -15,6 +15,6 @@ client_scripts {
 }
 
 dependencies {
-    esx_extended,
-    esx_basicneeds
+    'esx_extended',
+    'esx_basicneeds'
 }
