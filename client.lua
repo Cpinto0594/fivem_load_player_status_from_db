@@ -9,11 +9,10 @@ Citizen.CreateThread(function()
 end)
 
    
-AddEventHandler('esx:loadingScreenOff', function() 
-    local serverId = GetPlayerServerId(PlayerId())
-    print("serverId " ..serverId)
-    TriggerServerEvent( 'load_player_status:getStatus', serverId, 'hunger')
-    TriggerServerEvent( 'load_player_status:getStatus', serverId, 'thirst' )
+AddEventHandler('esx:loadingScreenOff', function()
+    Citizen.Wait(1000) 
+    TriggerServerEvent( 'load_player_status:getStatus', 'hunger')
+    TriggerServerEvent( 'load_player_status:getStatus', 'thirst' )
 end)
 
 RegisterNetEvent('load_player_status:setStatus')
